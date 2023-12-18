@@ -1,0 +1,40 @@
+.accordian-section{
+    width: 60;
+}
+
+.accordian-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.accordian-title{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 12px 8px;
+}
+
+.accordian-title:hover,.active{
+    background-color: #f1f1f1;
+    transition: background-color ease-in .25s;
+}
+
+.accordian-title .title{
+    flex-grow: 2;
+    color: black;
+}
+
+.accordian-title .icon{
+    color: black;
+}
+
+.accordian-content{
+    padding: 0px 8px;   
+    overflow: hidden;
+    color: black;
+    transition: all ease-in .3s;
+}
+
+.accordian-content.active{
+    padding: 8px 8px;
+}
